@@ -405,6 +405,25 @@ header{
     font-size: 14px;
     color: var(--font--color2);
     margin-bottom: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+}
+
+.list__pricing::before{
+    content:' ';
+    background-image: url("../images/Ckechmark-1.svg");
+    width: 11px;
+    height: 11px;
+    z-index: 100;
+    right: 10px;
+    margin-right: 10px;
+}
+
+.list__pricing__not::before{
+    display: flex;
+    background: url("../images/Close.svg") no-repeat;
+
 }
 
 .price__out :nth-child(2).price__box {
